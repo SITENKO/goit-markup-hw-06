@@ -227,7 +227,9 @@ header {
 }
 
 .hero-button:hover,
-.hero-button:focus {
+.hero-button:focus,
+.send-btn:hover,
+.send-btn:focus {
   background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
@@ -509,6 +511,10 @@ header {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .follow-mail::placeholder {
@@ -520,7 +526,7 @@ header {
 
 .follow-mail:focus {
   border: 1px solid var(--accent-color);
-  background-color: #fff;
+  color: var(--secondary-text-color);
 }
 
 /* portfolio */
@@ -673,6 +679,10 @@ header {
   top: 14px;
   right: 12px;
   cursor: pointer;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btn:hover,
@@ -733,6 +743,10 @@ header {
   top: 50%;
   transform: translateY(-50%);
   left: 12px;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input {
@@ -742,6 +756,10 @@ header {
   outline-color: transparent;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:focus {
@@ -750,16 +768,6 @@ header {
 
 .modal-input:focus + .modal-icon {
   fill: var(--accent-color);
-}
-
-.input-check:checked + .check-text span {
-  background-color: var(--accent-color);
-  border-color: transparent;
-  fill: var(--secondary-text-color);
-}
-
-.input-check:focus + .check-text span {
-  border-color: var(--accent-color);
 }
 
 .comment-card {
@@ -789,7 +797,7 @@ header {
   color: #757575;
 }
 
-.check-text .mark {
+.mark {
   width: 16px;
   height: 15px;
   border: 2px solid #212121;
@@ -799,7 +807,22 @@ header {
   align-items: center;
   justify-content: center;
   fill: transparent;
+
+  transition-property: background-color, border-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.input-check:checked + .check-text .mark {
+  background-color: var(--accent-color);
+  border-color: transparent;
+  fill: var(--secondary-text-color);
+}
+
+.input-check:focus + .check-text .mark {
+  border-color: var(--accent-color);
+}
+
 .contract {
   padding-left: 3px;
   line-height: 1.71;
@@ -810,6 +833,11 @@ header {
 
 .send-btn {
   margin: 0 auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  transition-property: background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .comment-card::placeholder {
