@@ -501,13 +501,26 @@ header {
 }
 
 .follow-mail {
-  background-color: transparent;
   width: 350px;
   height: 50px;
   padding-left: 16px;
+  background-color: transparent;
+  outline: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+}
+
+.follow-mail::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.follow-mail:focus {
+  border: 1px solid var(--accent-color);
+  background-color: #fff;
 }
 
 /* portfolio */
@@ -673,6 +686,7 @@ header {
   pointer-events: none;
 }
 /* ------------------------------------------ */
+
 .form-btn {
   display: flex;
   gap: 10px;
@@ -770,9 +784,9 @@ header {
 
 .check-text {
   display: flex;
+  align-items: center;
   font-size: 14px;
   color: #757575;
-  align-items: center;
 }
 
 .check-text .mark {
@@ -792,6 +806,18 @@ header {
   text-underline-offset: 3px;
 
   color: var(--accent-color);
+}
+
+.send-btn {
+  margin: 0 auto;
+}
+
+.comment-card::placeholder {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
 }
 
 /* ------------------------------------------ */ ;
