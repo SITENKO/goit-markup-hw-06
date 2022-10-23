@@ -478,8 +478,14 @@
         <div>
           <h2 class="footer-soc-title">Підпишіться на розсилку</h2>
           <form class="follow">
-            <label>
-              <input type="text" placeholder="E-mail" class="follow-mail" />
+            <label for="follow-mail">
+              <input
+                class="follow-mail"
+                type="email"
+                name="follow-mail"
+                id="follow-mail"
+                placeholder="E-mail"
+              />
             </label>
             <button type="submit" class="form-btn">
               Підписатися
@@ -496,59 +502,61 @@
       <div class="modal">
         <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
         <form class="form">
-          <div class="form-items">
-            <label class="label-title" for="user-name">Ім'я</label>
-            <div class="input-wrap">
-              <input
-                class="modal-input"
-                type="text"
-                name="user-name"
-                required
-                id="user-name"
-              />
-              <svg class="modal-icon" width="18" height="18">
-                <use href="./images/symbol-defs.svg#icon-username"></use>
-              </svg>
+          <div class="form-list">
+            <div class="form-items">
+              <label class="label-title" for="user-name">Ім'я</label>
+              <div class="input-wrap">
+                <input
+                  class="modal-input"
+                  type="text"
+                  name="user-name"
+                  required
+                  id="user-name"
+                />
+                <svg class="modal-icon" width="12" height="12">
+                  <use href="./images/symbol-defs.svg#icon-username"></use>
+                </svg>
+              </div>
             </div>
-          </div>
-          <div class="form-items">
-            <label class="label-title" for="user-tel">Телефон</label>
-            <div class="input-wrap">
-              <input
-                class="modal-input"
-                type="text"
-                name="user-tel"
-                required
-                id="user-tel"
-              />
-              <svg class="modal-icon" width="18" height="18">
-                <use href="./images/symbol-defs.svg#icon-numbertel"></use>
-              </svg>
+            <div class="form-items">
+              <label class="label-title" for="user-tel">Телефон</label>
+              <div class="input-wrap">
+                <input
+                  class="modal-input"
+                  type="text"
+                  name="user-tel"
+                  required
+                  id="user-tel"
+                />
+                <svg class="modal-icon" width="13" height="13">
+                  <use href="./images/symbol-defs.svg#icon-numbertel"></use>
+                </svg>
+              </div>
             </div>
-          </div>
-          <div class="form-items">
-            <label class="label-title" for="user-mail">Пошта</label>
-            <div class="input-wrap">
-              <input
-                class="modal-input"
-                type="text"
-                name="user-mail"
-                required
-                id="user-mail"
-              />
-              <svg class="modal-icon" width="18" height="18">
-                <use href="./images/symbol-defs.svg#icon-mail"></use>
-              </svg>
+            <div class="form-items">
+              <label class="label-title" for="user-mail">Пошта</label>
+              <div class="input-wrap">
+                <input
+                  class="modal-input"
+                  type="email"
+                  name="user-mail"
+                  required
+                  id="user-mail"
+                />
+                <svg class="modal-icon" width="15" height="12">
+                  <use href="./images/symbol-defs.svg#icon-mail"></use>
+                </svg>
+              </div>
             </div>
-          </div>
-          <div class="form-items">
-            <label class="label-title" for="user-comment">Коментар</label>
-            <textarea
-              class="comment-card"
-              name="user-comment"
-              id="user-comment"
-              placeholder="Залишити коментар"
-            ></textarea>
+            <div class="form-items">
+              <label class="label-title" for="user-comment">Коментар</label>
+              <textarea
+                class="comment-card"
+                name="user-comment"
+                id="user-comment"
+                placeholder="Залишити коментар"
+              ></textarea>
+            </div>
           </div>
           <div class="modal-check">
             <input
@@ -570,7 +578,7 @@
           </div>
           <button class="form-btn send-btn" type="submit">Відправити</button>
         </form>
-        <button type="button" class="modal-btn" data-modal-close>
+        <button class="modal-btn" type="submit" data-modal-close>
           <svg class="modal-icon-close" width="18" height="18">
             <use href="./images/symbol-defs.svg#icon-close-btn"></use>
           </svg>
