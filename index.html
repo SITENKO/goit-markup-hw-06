@@ -500,6 +500,11 @@
     <!-- modal btn -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <button class="modal-btn" type="button" data-modal-close>
+          <svg class="modal-icon-close" width="11" height="11">
+            <use href="./images/symbol-defs.svg#icon-close-btn"></use>
+          </svg>
+        </button>
         <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
         <form class="form">
           <div class="form-list">
@@ -578,11 +583,6 @@
           </div>
           <button class="form-btn send-btn" type="submit">Відправити</button>
         </form>
-        <button class="modal-btn" type="submit" data-modal-close>
-          <svg class="modal-icon-close" width="18" height="18">
-            <use href="./images/symbol-defs.svg#icon-close-btn"></use>
-          </svg>
-        </button>
       </div>
     </div>
     <script src="./modal/modal.js"></script>
